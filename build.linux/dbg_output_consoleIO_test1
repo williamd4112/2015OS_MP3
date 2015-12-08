@@ -1,0 +1,13 @@
+../test/consoleIO_test1
+9
+8
+7
+6
+Machine halting!
+
+This is halt
+Ticks: total 669, idle 400, system 180, user 89
+Disk I/O: reads 0, writes 0
+Console I/O: reads 0, writes 4
+Paging: faults 0
+Network I/O: packets received 0, sent 0

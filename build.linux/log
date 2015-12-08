@@ -1,0 +1,83 @@
+Tick 0: Thread 1 is inserted into queue L1
+Tick 10: Thread 1 is inserted into queue L1
+Tick 20: Thread 2 is inserted into queue L1
+Tick 30: Thread 0 is replaced, and it has executed 30 ticks
+Tick 30: Thread 1 is removed from queue L1
+Tick 40: Thread 1 is replaced, and it has executed 40 ticks
+Tick 40: Thread 1 is removed from queue L1
+Tick 50: Thread 1(../test/consoleIO_test1) initiate
+Tick 80: Thread 1 is replaced, and it has executed 30 ticks
+Tick 80: Thread 2 is removed from queue L1
+Tick 90: Thread 2(../test/consoleIO_test2) initiate
+Tick 120: Thread 2 is replaced, and it has executed 30 ticks
+Tick 180: Thread 1 is inserted into queue L1
+Tick 180: Thread 1 is removed from queue L1
+Tick 180: Thread 1 is now selcted for execution (Start at 180)
+Tick 190: Thread 2 is inserted into queue L1
+Tick 200: Thread 2 is removed from queue L1
+Tick 200: Thread 1 is replaced, and it has executed 20 ticks
+Tick 200: Thread 1 is inserted into queue L1
+Tick 200: Thread 2 is now selcted for execution (Start at 200)
+Tick 210: Thread 2 is replaced, and it has executed 10 ticks
+Tick 210: Thread 1 is removed from queue L1
+Tick 210: Thread 1 is now selcted for execution (Start at 210)
+Tick 237: Thread 1 is replaced, and it has executed 27 ticks
+Tick 310: Thread 2 is inserted into queue L1
+Tick 310: Thread 2 is removed from queue L1
+Tick 310: Thread 2 is now selcted for execution (Start at 310)
+Tick 320: Thread 1 is inserted into queue L1
+Tick 357: Thread 2 is replaced, and it has executed 47 ticks
+Tick 357: Thread 1 is removed from queue L1
+Tick 357: Thread 1 is now selcted for execution (Start at 357)
+Tick 357: Thread 1 is replaced, and it has executed 0 ticks
+Tick 457: Thread 2 is inserted into queue L1
+Tick 457: Thread 2 is removed from queue L1
+Tick 457: Thread 2 is now selcted for execution (Start at 457)
+Tick 467: Thread 1 is inserted into queue L1
+Tick 504: Thread 1 is removed from queue L1
+Tick 504: Thread 2 is replaced, and it has executed 47 ticks
+Tick 504: Thread 2 is inserted into queue L1
+Tick 504: Thread 1 is now selcted for execution (Start at 504)
+Tick 504: Thread 1 is replaced, and it has executed 0 ticks
+Tick 504: Thread 2 is removed from queue L1
+Tick 504: Thread 2 is now selcted for execution (Start at 504)
+Tick 514: Thread 2 is replaced, and it has executed 10 ticks
+Tick 614: Thread 2 is inserted into queue L1
+Tick 614: Thread 2 is removed from queue L1
+Tick 614: Thread 2 is now selcted for execution (Start at 614)
+Tick 624: Thread 1 is inserted into queue L1
+Tick 661: Thread 2 is replaced, and it has executed 47 ticks
+Tick 661: Thread 1 is removed from queue L1
+Tick 661: Thread 1 is now selcted for execution (Start at 661)
+Tick 661: Thread 1 is replaced, and it has executed 0 ticks
+Tick 761: Thread 2 is inserted into queue L1
+Tick 761: Thread 2 is removed from queue L1
+Tick 761: Thread 2 is now selcted for execution (Start at 761)
+Tick 771: Thread 1 is inserted into queue L1
+Tick 808: Thread 1 is removed from queue L1
+Tick 808: Thread 2 is replaced, and it has executed 47 ticks
+Tick 808: Thread 2 is inserted into queue L1
+Tick 808: Thread 1 is now selcted for execution (Start at 808)
+Tick 808: Thread 1 is replaced, and it has executed 0 ticks
+Tick 808: Thread 2 is removed from queue L1
+Tick 808: Thread 2 is now selcted for execution (Start at 808)
+Tick 818: Thread 2 is replaced, and it has executed 10 ticks
+Tick 918: Thread 2 is inserted into queue L1
+Tick 918: Thread 2 is removed from queue L1
+Tick 918: Thread 2 is now selcted for execution (Start at 918)
+Tick 928: Thread 1 is inserted into queue L1
+Tick 961: Thread 2 is replaced, and it has executed 43 ticks
+Tick 961: Thread 1 is removed from queue L1
+Tick 961: Thread 1 is now selcted for execution (Start at 961)
+Tick 971: Thread 1 is replaced, and it has executed 10 ticks
+Tick 1071: Thread 1 is inserted into queue L1
+Tick 1071: Thread 1 is removed from queue L1
+Tick 1071: Thread 1 is now selcted for execution (Start at 1071)
+Tick 1128: Thread 1 is replaced, and it has executed 57 ticks
+Tick 1228: Thread 1 is inserted into queue L1
+Tick 1228: Thread 1 is removed from queue L1
+Tick 1228: Thread 1 is now selcted for execution (Start at 1228)
+Tick 1275: Thread 1 is replaced, and it has executed 47 ticks
+Tick 1375: Thread 1 is inserted into queue L1
+Tick 1375: Thread 1 is removed from queue L1
+Tick 1375: Thread 1 is now selcted for execution (Start at 1375)
