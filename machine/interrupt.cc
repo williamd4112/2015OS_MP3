@@ -174,12 +174,13 @@ Interrupt::OneTick()
     {
         stats->totalTicks += UserTick;
         stats->userTicks += UserTick;
-        kernel->currentThread->setCPUBurst(kernel->currentThread->getCPUBurst() + UserTick);
     }
 
     DEBUG(dbgInt, "\n== Tick " << stats->totalTicks << " / " << stats->userTicks << " ==");
-// check any pending interrupts are now ready to fire
+    
+    // check any pending interrupts are now ready to fire
     ChangeLevel(IntOn, IntOff);	// first, turn off interrupts
+    
     // (interrupt handlers run with
     // interrupts disabled)
     CheckIfDue(FALSE);		// check for pending interrupts
@@ -208,6 +209,7 @@ Interrupt::OneTick()
 void
 Interrupt::YieldOnReturn()
 {
+    if(!inHandler) return;
     ASSERT(inHandler == TRUE);
     yieldOnReturn = TRUE;
 }
@@ -295,6 +297,15 @@ int
 Interrupt::CloseFile(OpenFileId id)
 {
     return kernel->CloseFile(id);
+}
+
+void
+Interrupt::Yield()
+{
+    bool oldInHandler = inHandler;
+    inHandler = TRUE;
+    YieldOnReturn();
+    inHandler = oldInHandler;;
 }
 
 //----------------------------------------------------------------------

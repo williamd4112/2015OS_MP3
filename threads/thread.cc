@@ -111,7 +111,7 @@ Thread::Fork(VoidFunctionPtr func, void *arg)
 
     oldLevel = interrupt->SetLevel(IntOff);
     scheduler->ReadyToRun(this);	// ReadyToRun assumes that interrupts
-    // are disabled!
+                                        // are disabled!
     (void) interrupt->SetLevel(oldLevel);
 }
 
@@ -222,11 +222,8 @@ Thread::Yield ()
     nextThread = kernel->scheduler->FindNextToRun();
     if (nextThread != NULL)
     {
-        kernel->currentThread->cpuBurst = kernel->stats->totalTicks - kernel->currentThread->lastCPUTick;
-        fprintf(logFile, "Tick %d: Thread %d is replaced, and it has executed %d ticks\n",
-            kernel->stats->totalTicks, 
-            kernel->currentThread->getID(),
-            kernel->currentThread->cpuBurst);
+        cpuBurst += kernel->stats->totalTicks - lastCPUTick;
+        readyToContextSwitch(nextThread, 1);
 
         kernel->scheduler->ReadyToRun(this);
         kernel->scheduler->Run(nextThread, FALSE);
@@ -266,21 +263,18 @@ Thread::Sleep (bool finishing)
     ASSERT(this == kernel->currentThread);
     ASSERT(kernel->interrupt->getLevel() == IntOff);
     
-    kernel->currentThread->cpuBurst = kernel->stats->totalTicks - kernel->currentThread->lastCPUTick;
-
+    fprintf(logFile, "Tick %d: Thread %d Sleep\n",kernel->stats->totalTicks,kernel->currentThread->getID());
+    cpuBurst += kernel->stats->totalTicks - lastCPUTick;   
+    guessCPUBurst = ((double)cpuBurst + guessCPUBurst) * 0.5;    
     status = BLOCKED;
-    
-    fprintf(logFile, "Tick %d: Thread %d is replaced, and it has executed %d ticks\n",
-      kernel->stats->totalTicks, 
-      kernel->currentThread->getID(),
-      kernel->currentThread->cpuBurst);
-
+     
     while ((nextThread = kernel->scheduler->FindNextToRun()) == NULL)
     {
         kernel->interrupt->Idle();	// no one to run, wait for an interrupt
     }
-    //cout << "debu Thread::Sleep " << name << " finish idle " << endl;
-    // returns when it's time for us to run
+
+    readyToContextSwitch(nextThread, 0);
+    cpuBurst = 0;
     kernel->scheduler->Run(nextThread, finishing);
 }
 
@@ -402,6 +396,22 @@ Thread::StackAllocate (VoidFunctionPtr func, void *arg)
     machineState[WhenDonePCState] = (void*)ThreadFinish;
 #endif
 }
+
+//----------------------------------------------------------------------
+// Thread::readyToContextSwitch
+//----------------------------------------------------------------------
+void
+Thread::readyToContextSwitch(Thread *nextThread, int type)
+{
+    fprintf(logFile, "Tick %d: Thread %d is replaced, and it has executed %d ticks\n",
+            kernel->stats->totalTicks,
+            kernel->currentThread->getID(),
+            kernel->currentThread->cpuBurst);
+    fprintf(logFile, "Tick %d: Thread %d is now selcted for execution\n",
+      kernel->stats->totalTicks,
+      nextThread->getID());
+}
+
 
 #include "machine.h"
 

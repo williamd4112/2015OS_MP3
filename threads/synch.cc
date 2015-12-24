@@ -113,7 +113,6 @@ Semaphore::V()
         kernel->scheduler->ReadyToRun(queue->RemoveFront());
     }
     value++;
-
     // re-enable interrupts
     (void) interrupt->SetLevel(oldLevel);
 }

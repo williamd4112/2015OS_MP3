@@ -62,15 +62,11 @@ Machine::Run()
     if (debug->IsEnabled('m'))
     {
         cout << "Starting program in thread: " << kernel->currentThread->getName();
-        cout << ", at time: " << kernel->stats->totalTicks << "\n";
+        cout << ", at time: " << kernel->stats->totalTicks << " Priority: " << kernel->currentThread->getPriority() << endl;
     }
 
     kernel->interrupt->setStatus(UserMode);
-    kernel->currentThread->lastCPUTick = kernel->stats->totalTicks;
-    fprintf(logFile, "Tick %d: Thread %d(%s) initiate\n",
-      kernel->stats->totalTicks,
-      kernel->currentThread->getID(),
-      kernel->currentThread->getName());
+    
     for (;;)
     {
         OneInstruction(instr);

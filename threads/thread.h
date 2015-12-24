@@ -51,7 +51,7 @@
 // For simplicity, I just take the maximum over all architectures.
 
 #define MachineStateSize 75
-
+#define AGING_TICKS 1500
 
 // Size of the thread's private execution stack.
 // WATCH OUT IF THIS ISN'T BIG ENOUGH!!!!!
@@ -127,8 +127,13 @@ public:
     {
         return priority;
     }
+
+    void setPriority(int p)
+    {
+        priority = p;
+    }
     
-    long long getCPUBurst()
+    int getCPUBurst()
     {
         return cpuBurst;
     }
@@ -138,7 +143,7 @@ public:
         cpuBurst = burst;
     }
     
-    long long getGuessCPUBurst()
+    double getGuessCPUBurst()
     {
         return guessCPUBurst;
     }
@@ -147,7 +152,7 @@ public:
     {
         guessCPUBurst = burst;
     }
-    
+
     void Print()
     {
         cout << name;
@@ -165,12 +170,13 @@ private:
     int   ID;
     
     int priority;
-    long long cpuBurst;
-    long long guessCPUBurst;
-    long long lastCPUTick;
+    int cpuBurst;
+    double guessCPUBurst;
+    int lastCPUTick;
 
     void StackAllocate(VoidFunctionPtr func, void *arg);
-    // Allocate a stack for thread.
+    void readyToContextSwitch(Thread *nextThread, int type);
+            // Allocate a stack for thread.
     // Used internally by Fork()
 
 // A thread running a user program actually has *two* sets of CPU registers --

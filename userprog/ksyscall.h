@@ -59,5 +59,13 @@ void SysPrintInt(int num)
     kernel->interrupt->PrintInt(num);
 }
 
+void SysYield()
+{
+    kernel->interrupt->Yield();
+}
+
+void SysSleep(int tick)
+{
+}
 
 #endif /* ! __USERPROG_KSYSCALL_H__ */

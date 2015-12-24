@@ -1,0 +1,242 @@
+Tick 10: Thread 1 is inserted into queue L1 (EST: 0.000000, PRI: 100)
+Tick 20: Thread 2 is inserted into queue L1 (EST: 0.000000, PRI: 100)
+Tick 30: Thread 3 is inserted into queue L1 (EST: 0.000000, PRI: 100)
+Tick 40: Thread 1 is removed from queue L1 (EST: 0.000000, PRI: 100)
+Tick 40: Thread 0 is replaced, and it has executed 40 ticks
+Tick 40: Thread 1 is now selcted for execution
+Tick 381: Thread 2 is removed from queue L1 (EST: 0.000000, PRI: 100)
+Tick 381: Thread 1 is replaced, and it has executed 341 ticks
+Tick 381: Thread 2 is now selcted for execution
+Tick 481: Thread 1 is inserted into queue L1 (EST: 170.500000, PRI: 100)
+Tick 512: Thread 3 is removed from queue L1 (EST: 0.000000, PRI: 100)
+Tick 512: Thread 2 is replaced, and it has executed 131 ticks
+Tick 512: Thread 3 is now selcted for execution
+Tick 743: Thread 1 is removed from queue L1 (EST: 170.500000, PRI: 100)
+Tick 743: Thread 3 is replaced, and it has executed 231 ticks
+Tick 743: Thread 1 is now selcted for execution
+Tick 753: Thread 2 is inserted into queue L1 (EST: 65.500000, PRI: 100)
+Tick 1053: Thread 2 is removed from queue L1 (EST: 65.500000, PRI: 100)
+Tick 1053: Thread 1 is replaced, and it has executed 310 ticks
+Tick 1053: Thread 2 is now selcted for execution
+Tick 1053: Thread 1 is inserted into queue L1 (EST: 170.500000, PRI: 100)
+Tick 1063: Thread 1 is removed from queue L1 (EST: 170.500000, PRI: 100)
+Tick 1063: Thread 2 is replaced, and it has executed 10 ticks
+Tick 1063: Thread 1 is now selcted for execution
+Tick 1163: Thread 2 is inserted into queue L1 (EST: 37.750000, PRI: 100)
+Tick 1163: Thread 2 is removed from queue L1 (EST: 37.750000, PRI: 100)
+Tick 1163: Thread 1 is replaced, and it has executed 410 ticks
+Tick 1163: Thread 2 is now selcted for execution
+Tick 1163: Thread 1 is inserted into queue L1 (EST: 170.500000, PRI: 100)
+Tick 1173: Thread 3 is inserted into queue L1 (EST: 115.500000, PRI: 100)
+Tick 1293: Thread 3 is removed from queue L1 (EST: 115.500000, PRI: 100)
+Tick 1293: Thread 2 is replaced, and it has executed 130 ticks
+Tick 1293: Thread 3 is now selcted for execution
+Tick 1293: Thread 2 is inserted into queue L1 (EST: 37.750000, PRI: 100)
+Tick 1303: Thread 2 is removed from queue L1 (EST: 37.750000, PRI: 100)
+Tick 1303: Thread 3 is replaced, and it has executed 10 ticks
+Tick 1303: Thread 2 is now selcted for execution
+Tick 1403: Thread 3 is inserted into queue L1 (EST: 62.750000, PRI: 100)
+Tick 1426: Thread 3 is removed from queue L1 (EST: 62.750000, PRI: 100)
+Tick 1426: Thread 2 is replaced, and it has executed 253 ticks
+Tick 1426: Thread 3 is now selcted for execution
+Tick 1426: Thread 2 is inserted into queue L1 (EST: 37.750000, PRI: 100)
+Tick 1646: Thread 2 is removed from queue L1 (EST: 37.750000, PRI: 100)
+Tick 1646: Thread 3 is replaced, and it has executed 220 ticks
+Tick 1646: Thread 2 is now selcted for execution
+Tick 1646: Thread 3 is inserted into queue L1 (EST: 62.750000, PRI: 100)
+Tick 1769: Thread 3 is removed from queue L1 (EST: 62.750000, PRI: 100)
+Tick 1769: Thread 2 is replaced, and it has executed 376 ticks
+Tick 1769: Thread 3 is now selcted for execution
+Tick 1769: Thread 2 is inserted into queue L1 (EST: 37.750000, PRI: 100)
+Tick 1982: Thread 2 is removed from queue L1 (EST: 37.750000, PRI: 100)
+Tick 1982: Thread 3 is replaced, and it has executed 433 ticks
+Tick 1982: Thread 2 is now selcted for execution
+Tick 1982: Thread 3 is inserted into queue L1 (EST: 62.750000, PRI: 100)
+Tick 2105: Thread 3 is removed from queue L1 (EST: 62.750000, PRI: 100)
+Tick 2105: Thread 2 is replaced, and it has executed 499 ticks
+Tick 2105: Thread 3 is now selcted for execution
+Tick 2105: Thread 2 is inserted into queue L1 (EST: 37.750000, PRI: 100)
+Tick 2318: Thread 2 is removed from queue L1 (EST: 37.750000, PRI: 100)
+Tick 2318: Thread 3 is replaced, and it has executed 646 ticks
+Tick 2318: Thread 2 is now selcted for execution
+Tick 2318: Thread 3 is inserted into queue L1 (EST: 62.750000, PRI: 100)
+Tick 2441: Thread 3 is removed from queue L1 (EST: 62.750000, PRI: 100)
+Tick 2441: Thread 2 is replaced, and it has executed 622 ticks
+Tick 2441: Thread 3 is now selcted for execution
+Tick 2441: Thread 2 is inserted into queue L1 (EST: 37.750000, PRI: 100)
+Tick 2654: Thread 2 is removed from queue L1 (EST: 37.750000, PRI: 100)
+Tick 2654: Thread 3 is replaced, and it has executed 859 ticks
+Tick 2654: Thread 2 is now selcted for execution
+Tick 2654: Thread 3 is inserted into queue L1 (EST: 62.750000, PRI: 100)
+Tick 2703: Thread 1 changes its priority from 100 to 110
+Tick 2703: Thread 1 is inserted into queue L1 (EST: 170.500000, PRI: 110)
+Tick 2777: Thread 3 is removed from queue L1 (EST: 62.750000, PRI: 100)
+Tick 2777: Thread 2 is replaced, and it has executed 745 ticks
+Tick 2777: Thread 3 is now selcted for execution
+Tick 2777: Thread 2 is inserted into queue L1 (EST: 37.750000, PRI: 100)
+Tick 2990: Thread 2 is removed from queue L1 (EST: 37.750000, PRI: 100)
+Tick 2990: Thread 3 is replaced, and it has executed 1072 ticks
+Tick 2990: Thread 2 is now selcted for execution
+Tick 2990: Thread 3 is inserted into queue L1 (EST: 62.750000, PRI: 100)
+Tick 3113: Thread 3 is removed from queue L1 (EST: 62.750000, PRI: 100)
+Tick 3113: Thread 2 is replaced, and it has executed 868 ticks
+Tick 3113: Thread 3 is now selcted for execution
+Tick 3113: Thread 2 is inserted into queue L1 (EST: 37.750000, PRI: 100)
+Tick 3326: Thread 2 is removed from queue L1 (EST: 37.750000, PRI: 100)
+Tick 3326: Thread 3 is replaced, and it has executed 1285 ticks
+Tick 3326: Thread 2 is now selcted for execution
+Tick 3326: Thread 3 is inserted into queue L1 (EST: 62.750000, PRI: 100)
+Tick 3449: Thread 3 is removed from queue L1 (EST: 62.750000, PRI: 100)
+Tick 3449: Thread 2 is replaced, and it has executed 991 ticks
+Tick 3449: Thread 3 is now selcted for execution
+Tick 3449: Thread 2 is inserted into queue L1 (EST: 37.750000, PRI: 100)
+Tick 3662: Thread 2 is removed from queue L1 (EST: 37.750000, PRI: 100)
+Tick 3662: Thread 3 is replaced, and it has executed 1498 ticks
+Tick 3662: Thread 2 is now selcted for execution
+Tick 3662: Thread 3 is inserted into queue L1 (EST: 62.750000, PRI: 100)
+Tick 3785: Thread 3 is removed from queue L1 (EST: 62.750000, PRI: 100)
+Tick 3785: Thread 2 is replaced, and it has executed 1114 ticks
+Tick 3785: Thread 3 is now selcted for execution
+Tick 3785: Thread 2 is inserted into queue L1 (EST: 37.750000, PRI: 100)
+Tick 3998: Thread 2 is removed from queue L1 (EST: 37.750000, PRI: 100)
+Tick 3998: Thread 3 is replaced, and it has executed 1711 ticks
+Tick 3998: Thread 2 is now selcted for execution
+Tick 3998: Thread 3 is inserted into queue L1 (EST: 62.750000, PRI: 100)
+Tick 4121: Thread 3 is removed from queue L1 (EST: 62.750000, PRI: 100)
+Tick 4121: Thread 2 is replaced, and it has executed 1237 ticks
+Tick 4121: Thread 3 is now selcted for execution
+Tick 4121: Thread 2 is inserted into queue L1 (EST: 37.750000, PRI: 100)
+Tick 4208: Thread 1 changes its priority from 110 to 120
+Tick 4208: Thread 1 is inserted into queue L1 (EST: 170.500000, PRI: 120)
+Tick 4334: Thread 2 is removed from queue L1 (EST: 37.750000, PRI: 100)
+Tick 4334: Thread 3 is replaced, and it has executed 1924 ticks
+Tick 4334: Thread 2 is now selcted for execution
+Tick 4334: Thread 3 is inserted into queue L1 (EST: 62.750000, PRI: 100)
+Tick 4372: Thread 3 is removed from queue L1 (EST: 62.750000, PRI: 100)
+Tick 4372: Thread 2 is replaced, and it has executed 1275 ticks
+Tick 4372: Thread 3 is now selcted for execution
+Tick 4472: Thread 2 is inserted into queue L1 (EST: 656.375000, PRI: 100)
+Tick 4585: Thread 1 is removed from queue L1 (EST: 170.500000, PRI: 120)
+Tick 4585: Thread 3 is replaced, and it has executed 2137 ticks
+Tick 4585: Thread 1 is now selcted for execution
+Tick 4585: Thread 3 is inserted into queue L1 (EST: 62.750000, PRI: 100)
+Tick 4798: Thread 3 is removed from queue L1 (EST: 62.750000, PRI: 100)
+Tick 4798: Thread 1 is replaced, and it has executed 623 ticks
+Tick 4798: Thread 3 is now selcted for execution
+Tick 4798: Thread 1 is inserted into queue L1 (EST: 170.500000, PRI: 120)
+Tick 5011: Thread 1 is removed from queue L1 (EST: 170.500000, PRI: 120)
+Tick 5011: Thread 3 is replaced, and it has executed 2350 ticks
+Tick 5011: Thread 1 is now selcted for execution
+Tick 5011: Thread 3 is inserted into queue L1 (EST: 62.750000, PRI: 100)
+Tick 5314: Thread 3 is removed from queue L1 (EST: 62.750000, PRI: 100)
+Tick 5314: Thread 1 is replaced, and it has executed 926 ticks
+Tick 5314: Thread 3 is now selcted for execution
+Tick 5314: Thread 1 is inserted into queue L1 (EST: 170.500000, PRI: 120)
+Tick 5527: Thread 1 is removed from queue L1 (EST: 170.500000, PRI: 120)
+Tick 5527: Thread 3 is replaced, and it has executed 2563 ticks
+Tick 5527: Thread 1 is now selcted for execution
+Tick 5527: Thread 3 is inserted into queue L1 (EST: 62.750000, PRI: 100)
+Tick 5830: Thread 3 is removed from queue L1 (EST: 62.750000, PRI: 100)
+Tick 5830: Thread 1 is replaced, and it has executed 1229 ticks
+Tick 5830: Thread 3 is now selcted for execution
+Tick 5830: Thread 1 is inserted into queue L1 (EST: 170.500000, PRI: 120)
+Tick 6008: Thread 2 changes its priority from 100 to 110
+Tick 6008: Thread 2 is inserted into queue L1 (EST: 656.375000, PRI: 110)
+Tick 6043: Thread 1 is removed from queue L1 (EST: 170.500000, PRI: 120)
+Tick 6043: Thread 3 is replaced, and it has executed 2776 ticks
+Tick 6043: Thread 1 is now selcted for execution
+Tick 6043: Thread 3 is inserted into queue L1 (EST: 62.750000, PRI: 100)
+Tick 6346: Thread 3 is removed from queue L1 (EST: 62.750000, PRI: 100)
+Tick 6346: Thread 1 is replaced, and it has executed 1532 ticks
+Tick 6346: Thread 3 is now selcted for execution
+Tick 6346: Thread 1 is inserted into queue L1 (EST: 170.500000, PRI: 120)
+Tick 6559: Thread 1 is removed from queue L1 (EST: 170.500000, PRI: 120)
+Tick 6559: Thread 3 is replaced, and it has executed 2989 ticks
+Tick 6559: Thread 1 is now selcted for execution
+Tick 6559: Thread 3 is inserted into queue L1 (EST: 62.750000, PRI: 100)
+Tick 6862: Thread 3 is removed from queue L1 (EST: 62.750000, PRI: 100)
+Tick 6862: Thread 1 is replaced, and it has executed 1835 ticks
+Tick 6862: Thread 3 is now selcted for execution
+Tick 6862: Thread 1 is inserted into queue L1 (EST: 170.500000, PRI: 120)
+Tick 7075: Thread 1 is removed from queue L1 (EST: 170.500000, PRI: 120)
+Tick 7075: Thread 3 is replaced, and it has executed 3202 ticks
+Tick 7075: Thread 1 is now selcted for execution
+Tick 7075: Thread 3 is inserted into queue L1 (EST: 62.750000, PRI: 100)
+Tick 7378: Thread 3 is removed from queue L1 (EST: 62.750000, PRI: 100)
+Tick 7378: Thread 1 is replaced, and it has executed 2138 ticks
+Tick 7378: Thread 3 is now selcted for execution
+Tick 7378: Thread 1 is inserted into queue L1 (EST: 170.500000, PRI: 120)
+Tick 7508: Thread 2 changes its priority from 110 to 120
+Tick 7508: Thread 2 is inserted into queue L1 (EST: 656.375000, PRI: 120)
+Tick 7591: Thread 1 is removed from queue L1 (EST: 170.500000, PRI: 120)
+Tick 7591: Thread 3 is replaced, and it has executed 3415 ticks
+Tick 7591: Thread 1 is now selcted for execution
+Tick 7591: Thread 3 is inserted into queue L1 (EST: 62.750000, PRI: 100)
+Tick 7894: Thread 3 is removed from queue L1 (EST: 62.750000, PRI: 100)
+Tick 7894: Thread 1 is replaced, and it has executed 2441 ticks
+Tick 7894: Thread 3 is now selcted for execution
+Tick 7894: Thread 1 is inserted into queue L1 (EST: 170.500000, PRI: 120)
+Tick 8107: Thread 1 is removed from queue L1 (EST: 170.500000, PRI: 120)
+Tick 8107: Thread 3 is replaced, and it has executed 3628 ticks
+Tick 8107: Thread 1 is now selcted for execution
+Tick 8107: Thread 3 is inserted into queue L1 (EST: 62.750000, PRI: 100)
+Tick 8410: Thread 3 is removed from queue L1 (EST: 62.750000, PRI: 100)
+Tick 8410: Thread 1 is replaced, and it has executed 2744 ticks
+Tick 8410: Thread 3 is now selcted for execution
+Tick 8410: Thread 1 is inserted into queue L1 (EST: 170.500000, PRI: 120)
+Tick 8623: Thread 1 is removed from queue L1 (EST: 170.500000, PRI: 120)
+Tick 8623: Thread 3 is replaced, and it has executed 3841 ticks
+Tick 8623: Thread 1 is now selcted for execution
+Tick 8623: Thread 3 is inserted into queue L1 (EST: 62.750000, PRI: 100)
+Tick 8926: Thread 3 is removed from queue L1 (EST: 62.750000, PRI: 100)
+Tick 8926: Thread 1 is replaced, and it has executed 3047 ticks
+Tick 8926: Thread 3 is now selcted for execution
+Tick 8926: Thread 1 is inserted into queue L1 (EST: 170.500000, PRI: 120)
+Tick 9020: Thread 2 changes its priority from 120 to 130
+Tick 9020: Thread 2 is inserted into queue L1 (EST: 656.375000, PRI: 130)
+Tick 9139: Thread 1 is removed from queue L1 (EST: 170.500000, PRI: 120)
+Tick 9139: Thread 3 is replaced, and it has executed 4054 ticks
+Tick 9139: Thread 1 is now selcted for execution
+Tick 9139: Thread 3 is inserted into queue L1 (EST: 62.750000, PRI: 100)
+Tick 9442: Thread 3 is removed from queue L1 (EST: 62.750000, PRI: 100)
+Tick 9442: Thread 1 is replaced, and it has executed 3350 ticks
+Tick 9442: Thread 3 is now selcted for execution
+Tick 9442: Thread 1 is inserted into queue L1 (EST: 170.500000, PRI: 120)
+Tick 9655: Thread 1 is removed from queue L1 (EST: 170.500000, PRI: 120)
+Tick 9655: Thread 3 is replaced, and it has executed 4267 ticks
+Tick 9655: Thread 1 is now selcted for execution
+Tick 9655: Thread 3 is inserted into queue L1 (EST: 62.750000, PRI: 100)
+Tick 9958: Thread 3 is removed from queue L1 (EST: 62.750000, PRI: 100)
+Tick 9958: Thread 1 is replaced, and it has executed 3653 ticks
+Tick 9958: Thread 3 is now selcted for execution
+Tick 9958: Thread 1 is inserted into queue L1 (EST: 170.500000, PRI: 120)
+Tick 9986: Thread 1 is removed from queue L1 (EST: 170.500000, PRI: 120)
+Tick 9986: Thread 3 is replaced, and it has executed 4295 ticks
+Tick 9986: Thread 1 is now selcted for execution
+Tick 10289: Thread 2 is removed from queue L1 (EST: 656.375000, PRI: 130)
+Tick 10289: Thread 1 is replaced, and it has executed 3956 ticks
+Tick 10289: Thread 2 is now selcted for execution
+Tick 10289: Thread 1 is inserted into queue L1 (EST: 170.500000, PRI: 120)
+Tick 10299: Thread 3 is inserted into queue L1 (EST: 2178.875000, PRI: 100)
+Tick 10320: Thread 1 is removed from queue L1 (EST: 170.500000, PRI: 120)
+Tick 10320: Thread 2 is replaced, and it has executed 31 ticks
+Tick 10320: Thread 1 is now selcted for execution
+Tick 10623: Thread 3 is removed from queue L1 (EST: 2178.875000, PRI: 100)
+Tick 10623: Thread 1 is replaced, and it has executed 4259 ticks
+Tick 10623: Thread 3 is now selcted for execution
+Tick 10623: Thread 1 is inserted into queue L1 (EST: 170.500000, PRI: 120)
+Tick 10633: Thread 1 is removed from queue L1 (EST: 170.500000, PRI: 120)
+Tick 10633: Thread 3 is replaced, and it has executed 10 ticks
+Tick 10633: Thread 1 is now selcted for execution
+Tick 10733: Thread 3 is inserted into queue L1 (EST: 1094.437500, PRI: 100)
+Tick 10936: Thread 3 is removed from queue L1 (EST: 1094.437500, PRI: 100)
+Tick 10936: Thread 1 is replaced, and it has executed 4562 ticks
+Tick 10936: Thread 3 is now selcted for execution
+Tick 10936: Thread 1 is inserted into queue L1 (EST: 170.500000, PRI: 120)
+Tick 10967: Thread 1 is removed from queue L1 (EST: 170.500000, PRI: 120)
+Tick 10967: Thread 3 is replaced, and it has executed 31 ticks
+Tick 10967: Thread 1 is now selcted for execution
+Tick 15650: Thread 1 is inserted into queue L1 (EST: 4657.750000, PRI: 120)
+Tick 15650: Thread 1 is removed from queue L1 (EST: 4657.750000, PRI: 120)
+Tick 15650: Thread 1 is replaced, and it has executed 9145 ticks
+Tick 15650: Thread 1 is now selcted for execution

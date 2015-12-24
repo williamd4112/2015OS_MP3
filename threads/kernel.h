@@ -41,7 +41,7 @@ public:
     // from constructor because
     // refers to "kernel" as a global
     void ExecAll();
-    int Exec(char* name);
+    int Exec(char* name, int execfileIndex);
     void ThreadSelfTest();	// self test of threads and synchronization
 
     void ConsoleTest();         // interactive console self test
@@ -79,6 +79,7 @@ private:
 
     Thread* t[10];
     char*   execfile[10];
+    int execfileInitPriority[10];
     int execfileNum;
     int threadNum;
     bool randomSlice;		// enable pseudo-random time slicing

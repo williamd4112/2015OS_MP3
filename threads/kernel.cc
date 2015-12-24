@@ -58,6 +58,13 @@ Kernel::Kernel(int argc, char **argv)
             execfile[++execfileNum]= argv[++i];
             cout << execfile[execfileNum] << "\n";
         }
+        else if(strcmp(argv[i], "-ep") == 0)
+        {
+            ASSERT(i + 2 < argc);
+            execfile[++execfileNum]= argv[++i];
+            sscanf(argv[++i], "%d", &execfileInitPriority[execfileNum]); 
+            printf("%d: %s PRI: %d\n",execfileNum, execfile[execfileNum], execfileInitPriority[execfileNum]);
+        }
         else if (strcmp(argv[i], "-ci") == 0)
         {
             ASSERT(i + 1 < argc);
@@ -132,8 +139,8 @@ Kernel::Initialize()
 #else
     fileSystem = new FileSystem(formatFlag);
 #endif // FILESYS_STUB
-    postOfficeIn = new PostOfficeInput(10);
-    postOfficeOut = new PostOfficeOutput(reliability);
+    //postOfficeIn = new PostOfficeInput(10);
+    //postOfficeOut = new PostOfficeOutput(reliability);
 
     interrupt->Enable();
     memset(physicPages, 0, sizeof(physicPages));
@@ -292,18 +299,20 @@ void Kernel::ExecAll()
 {
     for (int i=1; i<=execfileNum; i++)
     {
-        int a = Exec(execfile[i]);
+        int a = Exec(execfile[i], i);
     }
     currentThread->Finish();
     //Kernel::Exec();
 }
 
 
-int Kernel::Exec(char* name)
+int Kernel::Exec(char* name, int execFileIndex)
 {
     t[threadNum] = new Thread(name, threadNum);
+    t[threadNum]->setPriority(execfileInitPriority[execFileIndex]);
     t[threadNum]->space = new AddrSpace();
     t[threadNum]->Fork((VoidFunctionPtr) &ForkExecute, (void *)t[threadNum]);
+    
     threadNum++;
 
     return threadNum-1;
